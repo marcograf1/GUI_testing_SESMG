@@ -99,6 +99,13 @@ def main_input_sidebar() -> st.runtime.uploaded_file_manager.UploadedFile:
             (st.runtime.uploaded_file_manager.UploadedFile) - model \
             defintion as a st.UploadedFile
     """
+    
+    st.button("Reset", type="primary")
+    if st.button("Say hello"):
+        st.write("Why hello there")
+    else:
+        st.write("Goodbye")
+
     # Creating Frame as st.form_submit_button
     with st.sidebar.form("Input Parameters"):
 
