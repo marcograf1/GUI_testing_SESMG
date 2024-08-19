@@ -477,6 +477,12 @@ def main_input_sidebar() -> st.runtime.uploaded_file_manager.UploadedFile:
 
             GUI_main_dict["input_console_results"] = False
 
+    st.button("Reset", type="primary")
+    if st.button("Say hello"):
+        st.write("Why hello there")
+    else:
+        st.write("Goodbye")
+
     return model_definition_input
 
 
